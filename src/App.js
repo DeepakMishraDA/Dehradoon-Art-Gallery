@@ -13,7 +13,6 @@ function App() {
         <AllButtons />
       </Box>
       <Box pl={25} sx={{ display: "flex" }}>
-        <h1>Tanvi Singh</h1>
         <AllTabs />
       </Box>
     </div>
