@@ -3,19 +3,49 @@ import AllTabs from "./components/tabs";
 import AllButtons from "./components/Buttons";
 
 function App() {
+  const url = "#";
   return (
-    <div className="App">
-      <Box
-        m={0.5}
-        pl={125}
-        style={{ borderBottom: ".5px solid", borderColor: "pink" }}
+    <Box className="App">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "end",
+          marginRight: "3.5%",
+          marginBottom: "0%",
+        }}
       >
         <AllButtons />
-      </Box>
-      <Box pl={25} sx={{ display: "flex" }}>
-        <AllTabs />
-      </Box>
-    </div>
+      </div>
+      <div
+        style={{
+          paddingLeft: "1%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h1
+          style={{
+            color: "black",
+            font: "italic 40px Tahoma Helvetica sans-serif",
+            textTransform: "uppercase",
+            paddingTop: "2%",
+          }}
+        >
+          <a
+            href={url}
+            style={{ textDecoration: "none", ":hover": { color: "red" } }}
+          >
+            {" "}
+            Tanvi Singh
+          </a>
+        </h1>
+        <AllTabs style={{ paddingTop: "8%", flex: "1" }} />
+      </div>
+      <div
+        style={{ border: "solid black 1px", padding: "10%", margin: "5%" }}
+      ></div>
+    </Box>
   );
 }
 

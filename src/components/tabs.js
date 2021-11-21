@@ -18,7 +18,6 @@ function AllTabs() {
         scrollButtons={true}
         aria-label="scrollable prevent tabs example"
       >
-        <Tab label="John" />
         <Tab label="Bio" />
         <Tab label="Photographs" />
         <Tab label="Murals" />
