@@ -33,12 +33,12 @@ function App() {
       >
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Sofia"
+          href="https://fonts.googleapis.com/css?family=Trirong"
         ></link>
         <h1
           style={{
             color: "black",
-            fontFamily: "Sofia",
+            fontFamily: "Trirong",
             fontSize: "38px",
             textTransform: "uppercase",
             paddingTop: "2%",
