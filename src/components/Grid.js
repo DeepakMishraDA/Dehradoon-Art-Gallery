@@ -1,12 +1,17 @@
 import * as React from "react";
 //import { experimentalStyled as styled } from "@mui/material/styles";
-//import Box from "@material-ui/core/Box";
+import Box from "@material-ui/core/Box";
 //import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
-import nature from "../images/1.jpg";
-import feature from "../images/6.jpg";
-import useStyles from "./useStyles";
+import n1 from "../images/1.jpg";
+import n2 from "../images/2.jpg";
+import n3 from "../images/3.jpg";
+import n4 from "../images/4.jpg";
+import n5 from "../images/5.jpg";
+import n6 from "../images/6.jpg";
+import n7 from "../images/7.jpg";
+//import useStyles from "./useStyles";
 
 // const Item = styled(Paper)(({ theme }) => ({
 //   ...theme.typography.body2,
@@ -16,25 +21,14 @@ import useStyles from "./useStyles";
 // }));
 
 function ResponsiveGrid() {
-  const arra = [nature, feature];
-  const classes = useStyles();
+  const arra = [n1, n2, n3, n4, n5, n6, n7];
+  //const classes = useStyles();
   return (
-    <div>
+    <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
       {arra.map((item, index) => {
-        if (index === 1) {
-          return (
-            <Grid className={classes.imgStyle}>
-              <img src={item} alt={index} />
-            </Grid>
-          );
-        }
-        return (
-          <Grid className={classes.imgStyle}>
-            <img src={item} alt={index} />
-          </Grid>
-        );
+        return <img width="350px" height="350px" src={item} alt={index} />;
       })}
-    </div>
+    </Box>
   );
 }
 export default ResponsiveGrid;
