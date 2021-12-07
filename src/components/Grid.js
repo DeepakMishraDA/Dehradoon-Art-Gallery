@@ -2,7 +2,7 @@ import * as React from "react";
 //import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@material-ui/core/Box";
 //import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+//import Grid from "@material-ui/core/Grid";
 
 import n1 from "../images/1.jpg";
 import n2 from "../images/2.jpg";
@@ -24,9 +24,22 @@ function ResponsiveGrid() {
   const arra = [n1, n2, n3, n4, n5, n6, n7];
   //const classes = useStyles();
   return (
-    <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
+    <Box
+      sx={{
+        backgroundColor: "aqua",
+        padding: "10px",
+        display: "grid",
+        gridTemplateColumns: "auto auto auto",
+        gridGap: "50px",
+        justifyContent: "space-evenly",
+      }}
+    >
       {arra.map((item, index) => {
-        return <img width="350px" height="350px" src={item} alt={index} />;
+        return (
+          <div>
+            <img width="350px" height="350px" src={item} alt={index} />
+          </div>
+        );
       })}
     </Box>
   );

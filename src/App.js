@@ -44,12 +44,7 @@ function App() {
         </h1>
         <AllTabs style={{ paddingTop: "8%", flex: "1" }} />
       </div>
-      <div
-        style={{ border: "transparent black 1px", padding: "10%", margin: "%" }}
-      >
-        <ResponsiveGrid />
-        {/* //<img src={nature} alt="image1" /> */}
-      </div>
+      <ResponsiveGrid />
     </Box>
   );
 }
