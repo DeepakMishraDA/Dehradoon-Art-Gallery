@@ -31,10 +31,15 @@ function App() {
           justifyContent: "space-between",
         }}
       >
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sofia"
+        ></link>
         <h1
           style={{
             color: "black",
-            font: "italic 40px Tahoma Helvetica sans-serif",
+            fontFamily: "Sofia",
+            fontSize: "38px",
             textTransform: "uppercase",
             paddingTop: "2%",
             paddingBottom: ".5%",
