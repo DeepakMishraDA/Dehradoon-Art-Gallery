@@ -27,6 +27,7 @@ function ResponsiveGrid() {
   return (
     <Box
       sx={{
+        paddingTop: "40px",
         padding: "10px",
         display: "grid",
         gridTemplateColumns: "auto auto auto",

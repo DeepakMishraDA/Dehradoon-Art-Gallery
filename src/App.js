@@ -16,33 +16,19 @@ function App() {
       <div
         style={{
           display: "flex",
-          justifyContent: "end",
+          justifyContent: "space-between",
           marginRight: "3.5%",
           marginBottom: "0%",
+          paddingTop: "5px",
         }}
       >
-        <AllButtons />
-      </div>
-      <div
-        style={{
-          paddingLeft: "1%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Trirong"
-        ></link>
         <h1
           style={{
+            paddingLeft: "100px",
             color: "black",
-            fontFamily: "Trirong",
+            fontFamily: "Sofia",
             fontSize: "38px",
             textTransform: "uppercase",
-            paddingTop: "2%",
-            paddingBottom: ".5%",
           }}
         >
           <a
@@ -52,7 +38,22 @@ function App() {
             {" "}
             Tanvi Singh
           </a>
-        </h1>
+        </h1>{" "}
+        <AllButtons />
+      </div>
+      <div
+        style={{
+          paddingLeft: "23%",
+          display: "flex",
+          alignItems: "right",
+          justifyContent: "space-evenly",
+          paddingTop: "0px",
+        }}
+      >
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sofia"
+        ></link>
         <AllTabs style={{ paddingTop: "8%", flex: "1" }} />
       </div>
       <ResponsiveGrid />
