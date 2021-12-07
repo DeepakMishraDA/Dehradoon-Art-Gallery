@@ -2,6 +2,8 @@ import Box from "@material-ui/core/Box";
 import AllTabs from "./components/tabs";
 import AllButtons from "./components/Buttons";
 
+import ResponsiveGrid from "./components/Grid";
+
 function App() {
   const url = "#";
   return (
@@ -43,8 +45,11 @@ function App() {
         <AllTabs style={{ paddingTop: "8%", flex: "1" }} />
       </div>
       <div
-        style={{ border: "solid black 1px", padding: "10%", margin: "5%" }}
-      ></div>
+        style={{ border: "transparent black 1px", padding: "10%", margin: "%" }}
+      >
+        <ResponsiveGrid />
+        {/* //<img src={nature} alt="image1" /> */}
+      </div>
     </Box>
   );
 }
