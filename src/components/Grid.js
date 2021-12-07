@@ -11,7 +11,8 @@ import n4 from "../images/4.jpg";
 import n5 from "../images/5.jpg";
 import n6 from "../images/6.jpg";
 import n7 from "../images/7.jpg";
-//import useStyles from "./useStyles";
+import n8 from "../images/8.jpg";
+import useStyles from "./useStyles";
 
 // const Item = styled(Paper)(({ theme }) => ({
 //   ...theme.typography.body2,
@@ -21,12 +22,11 @@ import n7 from "../images/7.jpg";
 // }));
 
 function ResponsiveGrid() {
-  const arra = [n1, n2, n3, n4, n5, n6, n7];
-  //const classes = useStyles();
+  const arra = [n1, n2, n3, n4, n5, n6, n7, n8];
+  const classes = useStyles();
   return (
     <Box
       sx={{
-        backgroundColor: "aqua",
         padding: "10px",
         display: "grid",
         gridTemplateColumns: "auto auto auto",
@@ -36,7 +36,7 @@ function ResponsiveGrid() {
     >
       {arra.map((item, index) => {
         return (
-          <div>
+          <div className={classes.divStyle}>
             <img width="350px" height="350px" src={item} alt={index} />
           </div>
         );

@@ -4,10 +4,10 @@ const useStyles = makeStyles({
   gridStyle: {
     display: "flex",
   },
-  imgStyle: {
-    width: "10%",
-    height: "55px",
-    objectFit: "cover",
+  divStyle: {
+    borderWidth: "2px",
+    borderStyle: "outset",
+    borderColor: "pink",
   },
 });
 

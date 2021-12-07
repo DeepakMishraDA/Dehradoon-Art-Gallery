@@ -7,7 +7,12 @@ import ResponsiveGrid from "./components/Grid";
 function App() {
   const url = "#";
   return (
-    <Box className="App">
+    <Box
+      sx={{
+        backgroundColor: "pink",
+      }}
+      className="App"
+    >
       <div
         style={{
           display: "flex",
@@ -32,6 +37,7 @@ function App() {
             font: "italic 40px Tahoma Helvetica sans-serif",
             textTransform: "uppercase",
             paddingTop: "2%",
+            paddingBottom: ".5%",
           }}
         >
           <a
