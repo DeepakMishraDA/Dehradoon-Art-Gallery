@@ -12,6 +12,19 @@ import n5 from "../images/5.jpg";
 import n6 from "../images/6.jpg";
 import n7 from "../images/7.jpg";
 import n8 from "../images/8.jpg";
+import wc from "../images/wc.jpg";
+import n10 from "../images/10.jpg";
+import n11 from "../images/11.jpg";
+import n12 from "../images/12.jpg";
+import n13 from "../images/13.jpg";
+import n14 from "../images/14.jpg";
+import n15 from "../images/15.jpg";
+import n16 from "../images/16.jpg";
+import n17 from "../images/17.jpg";
+import n18 from "../images/18.jpg";
+// import n19 from "../images/19.jpg";
+// import n20 from "../images/20.jpg";
+// import n21 from "../images/21.jpg";
 import useStyles from "./useStyles";
 
 // const Item = styled(Paper)(({ theme }) => ({
@@ -22,7 +35,26 @@ import useStyles from "./useStyles";
 // }));
 
 function ResponsiveGrid() {
-  const arra = [n1, n2, n3, n4, n5, n6, n7, n8];
+  const arra = [
+    n1,
+    n2,
+    n3,
+    n4,
+    n5,
+    n6,
+    n7,
+    n8,
+    wc,
+    n10,
+    n11,
+    n12,
+    n13,
+    n14,
+    n15,
+    n16,
+    n17,
+    n18,
+  ];
   const classes = useStyles();
   return (
     <Box
