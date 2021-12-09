@@ -6,8 +6,13 @@ const useStyles = makeStyles({
   },
   divStyle: {
     borderWidth: "2px",
-    borderStyle: "outset",
+    borderStyle: "transparent",
     borderColor: "pink",
+  },
+  tabstyle: {
+    fontSize: "15px",
+    fontWeight: "600",
+    color: "#DC143C",
   },
 });
 

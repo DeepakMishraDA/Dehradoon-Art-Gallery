@@ -3,13 +3,16 @@ import AllTabs from "./components/tabs";
 import AllButtons from "./components/Buttons";
 
 import ResponsiveGrid from "./components/Grid";
+import Image from "./images/9.jpg";
 
 function App() {
   const url = "#";
   return (
     <Box
       sx={{
-        backgroundColor: "pink",
+        backgroundColor: "#ffffff",
+        backgroundBlendMode: "normal",
+        backgroundImage: `url(${Image})`,
       }}
       className="App"
     >
@@ -18,28 +21,46 @@ function App() {
           display: "flex",
           justifyContent: "space-between",
           marginRight: "3.5%",
-          marginBottom: "0%",
-          paddingTop: "5px",
         }}
       >
-        <h1
+        {" "}
+        <div
           style={{
-            paddingLeft: "100px",
-            color: "black",
-            fontFamily: "Sofia",
-            fontSize: "38px",
-            textTransform: "uppercase",
+            fontSize: "28px",
+            paddingTop: "15px",
+            alignSelf: "flex-end",
           }}
         >
-          <a
-            href={url}
-            style={{ textDecoration: "none", ":hover": { color: "red" } }}
+          <h1
+            style={{
+              paddingLeft: "100px",
+              fontFamily: "Sofia",
+              textTransform: "uppercase",
+            }}
           >
-            {" "}
-            Tanvi Singh
-          </a>
-        </h1>{" "}
-        <AllButtons />
+            <a
+              href={url}
+              style={{
+                textDecoration: "none",
+                ":hover": { color: "#FFFFF" },
+              }}
+            >
+              {" "}
+              Tanvi Singh
+            </a>
+          </h1>
+        </div>
+        <div
+          style={{
+            paddingTop: "15px",
+            paddingRight: "5px",
+            alignSelf: "flex-start",
+          }}
+        >
+          {" "}
+          <AllButtons />
+          <hr />
+        </div>
       </div>
       <div
         style={{
